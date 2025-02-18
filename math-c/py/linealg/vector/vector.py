@@ -1,5 +1,5 @@
 def linear_combination(*datas):
-    get_size_first = len(datas[1])
+    get_size_first = len(datas[0])
     
     new_vector = [0 for _ in range(get_size_first)] 
     
@@ -13,7 +13,7 @@ def linear_combination(*datas):
             
 
 def dot_product(*datas):
-    get_size_first = len(datas[1])
+    get_size_first = len(datas[0])
     test = [1 for _ in range(get_size_first)] 
     for data in range(len(datas)):
         if len(datas[data]) != get_size_first:
